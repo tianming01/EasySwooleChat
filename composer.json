@@ -1,0 +1,16 @@
+{
+    "require": {
+        "easyswoole/easyswoole": "3.x",
+        "easyswoole/orm": "^1.4",
+        "easyswoole/hot-reload": "^0.1.2",
+        "league/plates": "3.*",
+        "easyswoole/template": "^1.0",
+        "easyswoole/redis-pool": "^2.1",
+        "easyswoole/verifycode": "3.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }
+}

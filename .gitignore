@@ -1,0 +1,7 @@
+/.idea
+/.vscode
+/Temp/*.sock
+/Temp/*.pid
+/vendor
+/Log/*.log
+composer.lock
