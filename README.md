@@ -1,7 +1,7 @@
 
 > EasySwoole-Chat 是基于EasySwoole与layim 的聊天应用
 
-> 此项目仅供学习交流，请勿用作商业用途
+> 此项目仅供学习交流，请勿用作商业用途 
 
 > 演示地址（http://eschat.qiyewei.cn部署中）
 
