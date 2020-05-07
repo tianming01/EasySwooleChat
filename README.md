@@ -3,7 +3,7 @@
 
 > 此项目仅供学习交流，请勿用作商业用途 
 
-> 演示地址（http://eschat.qiyewei.cn）
+> 演示地址：http://eschat.qiyewei.cn
 
 -   此项目是基于 EasySwoole V3.3.7 作为服务端，easySwoole是一款高度封装了swoole拓展而依旧保持swoole原有特性的一个高性能异步框架，旨在提供一个高效、快速、优雅的框架给php开发者。
 所以在此之前，你要熟悉 swoole、EasySwoole、、还有将他们完美结合的 `EasySwoole`<https://www.easyswoole.com>
