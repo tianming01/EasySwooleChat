@@ -12,7 +12,10 @@ class Test extends Base
 {
     public function websocket()
     {
-        $this->render('websocket');
+        $domain = \EasySwoole\EasySwoole\Config::getInstance()->getConf('DOMAIN');
+        $port = \EasySwoole\EasySwoole\Config::getInstance()->getConf('MAIN_SERVER.PORT');
+        $hostName = 'ws://'.$domain.':' . $port;
+        $this->render('websocket', ['server' => $hostName]);
     }
 
     public function join()

@@ -22,7 +22,10 @@ class Index extends Base
         }
 
         $user = json_decode($user,true);
-        $hostName = 'ws://'.$this->request()->getUri()->getHost().':9501';
+        $domain = \EasySwoole\EasySwoole\Config::getInstance()->getConf('DOMAIN');
+        $port = \EasySwoole\EasySwoole\Config::getInstance()->getConf('MAIN_SERVER.PORT');
+//        $hostName = 'ws://'.$this->request()->getUri()->getHost().':9501';// 这里的getHost()获取到的是服务器IP地址
+        $hostName = 'ws://'.$domain . ':' . $port;
         $this->render('index', [
             'server' => $hostName,'token'=>$token,'user'=>$user
         ]);
