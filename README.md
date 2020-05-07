@@ -3,7 +3,7 @@
 
 > 此项目仅供学习交流，请勿用作商业用途 
 
-> 演示地址（http://eschat.qiyewei.cn部署中）
+> 演示地址（http://eschat.qiyewei.cn）
 
 -   此项目是基于 EasySwoole V3.3.7 作为服务端，easySwoole是一款高度封装了swoole拓展而依旧保持swoole原有特性的一个高性能异步框架，旨在提供一个高效、快速、优雅的框架给php开发者。
 所以在此之前，你要熟悉 swoole、EasySwoole、、还有将他们完美结合的 `EasySwoole`<https://www.easyswoole.com>
@@ -26,7 +26,7 @@
 -   配置nginx代理
 ```
 server {
-    root /data/wwwroot/chat;
+    root /data/wwwroot/easyswoolechat;
     server_name eschat.qiyewei.cn;
     location / {
         proxy_http_version 1.1;
@@ -38,7 +38,7 @@ server {
     }
 }
 ```
--   修改`App\HttpController\index.php的index`方法中的`$hostName`变量为当前域名ws地址
+-   修改`dev.php`文件中的`DOMAIN`变量为当前域名ws地址
 -   运行 EasySwoole ` php easyswoole start`
 -   此时访问 `http://eschat.qiyewei.cn` 即可进入登录页面
 -   测试账号 `test1` - `test2` 密码全是 `123456`，当然你也可以自行注册。
@@ -67,4 +67,14 @@ server {
 
 
 ## 部分截图
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/12b2683ccff23eb63b44709ec85a5580?showdoc=.jpg)
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/dc1e1cc03cd58d7a922c850f0eadcfb8?showdoc=.jpg)
 
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/4460a8b7415b395e85526ba5fae398ae?showdoc=.jpg)
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/27bc7ef2451735dba0d6d40374ca1f19?showdoc=.jpg)
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/d56745667c49f2411798a822d28e1562?showdoc=.jpg)
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/b28d6a8d242e7363fcfd0946bb06a2ec?showdoc=.jpg)
+
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/d52d1ff55d5819b88a3595eeb72f5499?showdoc=.jpg)
+
+![](https://www.showdoc.cc/server/api/common/visitfile/sign/408d273322008fe3ae8eac188706e428?showdoc=.jpg)
